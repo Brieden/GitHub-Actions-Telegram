@@ -18,5 +18,5 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
     - name: Run app.py
-      run: python script.py
+      run: python app.py
 
