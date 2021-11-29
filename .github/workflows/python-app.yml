@@ -17,6 +17,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
+    - name: Install dependencies
+      run: |
+        python -m pip install requests
     - name: Run app.py
       run: python app.py ${{ secrets.TELEGRAM_TOKEN }} ${{ secrets.TELEGRAM_CHAT_ID }}
 
